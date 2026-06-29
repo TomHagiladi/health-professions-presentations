@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0f3b43">
+<title>סדנת מצגות עם AI · סגל מקצועות הבריאות · אונו</title>
+<meta name="description" content="אתר מלווה לסדנה: בניית מצגות וחומרים ויזואליים עם בינה מלאכותית. מסמך מתווה, Gemini Canvas, ChatGPT ו-NotebookLM — מדריך צעד-אחר-צעד ופרומפטים מוכנים להעתקה. הפקולטה למקצועות הבריאות, הקריה האקדמית אונו.">
+
+<meta property="og:title" content="סדנת מצגות עם AI · סגל מקצועות הבריאות · אונו">
+<meta property="og:description" content="מדריך מלווה ופרומפטים מוכנים: מסמך מתווה, Gemini Canvas, ChatGPT, NotebookLM">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;900&family=Heebo:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<a href="#main-content" class="skip-link">דלג לתוכן הראשי</a>
+
+<!-- Header -->
+<header class="site-header" role="banner">
+  <a href="#/" class="brand" aria-label="חזרה לדף הבית">
+    <img src="assets/logo.png" alt="לוגו תום הגלעדי" class="brand__logo">
+    <div class="brand__text">
+      <span class="brand__name">תום הגלעדי</span>
+      <span class="brand__tag">סדנת מצגות עם AI · מקצועות הבריאות · אונו</span>
+    </div>
+  </a>
+  <nav class="primary-nav" aria-label="ניווט מהיר">
+    <a href="#/" class="nav-link" data-route="/">בית</a>
+    <a href="#/outline" class="nav-link" data-route="/outline">מתווה</a>
+    <a href="#/canvas" class="nav-link" data-route="/canvas">Canvas</a>
+    <a href="#/images" class="nav-link" data-route="/images">ChatGPT</a>
+    <a href="#/notebook" class="nav-link" data-route="/notebook">NotebookLM</a>
+  </nav>
+</header>
+
+<main id="main-content">
+
+<!-- ============ HOME / LANDING ============ -->
+<section class="route route--home" data-route="/" hidden>
+  <div class="hero">
+    <p class="hero__eyebrow">
+      <span class="dot"></span>
+      מפגש 3 · סגל מקצועות הבריאות · אונו
+    </p>
+    <h1 class="hero__title">
+      שלום, מרצות ומרצים<span class="hero__exclaim">.</span><br>
+      <span class="hero__highlight">היום בונים מצגות עם בינה מלאכותית</span>
+    </h1>
+    <p class="hero__lede">
+      ארבעה כלים, ארבעה מסלולים — מהמסמך שמכין את הקרקע ועד מצגת שלמה בסגנון אחיד.
+      כל מסלול עצמאי, עם מדריך צעד-אחר-צעד ופרומפטים מוכנים להעתקה.
+    </p>
+    <p class="hero__hint" aria-live="polite">
+      <strong>במפגש הקודם טעמנו vibe coding — היום מצגות.</strong> אני כאן איתכם בזום; אם מישהו נתקע — כתבו לי.
+    </p>
+  </div>
+
+  <div class="cards">
+    <a href="#/outline" class="card card--outline" data-track="outline">
+      <div class="card__badge">התחילו כאן</div>
+      <div class="card__num">00</div>
+      <h2 class="card__title">מסמך המתווה</h2>
+      <p class="card__sub">עמוד השדרה של כל מצגת</p>
+      <p class="card__desc">
+        לפני שמייצרים — כותבים מסמך טקסט אחד שמתאר את התוכן ואת העיצוב.
+        זה מה שנותן עקביות, שליטה, וחוסך שעות של תיקונים.
+      </p>
+      <ul class="card__bullets">
+        <li>הבסיס לכל השאר</li>
+        <li>~5 דקות</li>
+      </ul>
+      <span class="card__cta">
+        התחילו במתווה
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M14 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+    </a>
+
+    <a href="#/canvas" class="card card--canvas" data-track="canvas">
+      <div class="card__badge">מתחילים מכאן</div>
+      <div class="card__num">01</div>
+      <h2 class="card__title">Gemini Canvas</h2>
+      <p class="card__sub">יוצר המצגות של Gemini</p>
+      <p class="card__desc">
+        מתארים מצגת בעברית — Gemini בונה אותה חיה, ואפשר לערוך בדיאלוג
+        ולשתף בקישור. הכלי המהיר שנתחיל ממנו היום.
+      </p>
+      <ul class="card__bullets">
+        <li>חינם לכולם</li>
+        <li>מהיר — מטקסט למצגת</li>
+      </ul>
+      <span class="card__cta">
+        התחילו מסלול
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M14 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+    </a>
+
+    <a href="#/images" class="card card--images" data-track="images">
+      <div class="card__badge">חדש · 21.04</div>
+      <div class="card__num">02</div>
+      <h2 class="card__title">ChatGPT Image2</h2>
+      <p class="card__sub">מודל התמונות החדש של OpenAI</p>
+      <p class="card__desc">
+        פוסטרים לכנס, אינפוגרפיקות נתונים, ומצגות שלמות בסגנון אחיד —
+        מטקסט אחד לתוצר מקצועי, כולל טקסט מדויק בעברית.
+      </p>
+      <ul class="card__bullets">
+        <li>חינם — מוגבל</li>
+        <li>~10 דקות להתנסות</li>
+      </ul>
+      <span class="card__cta">
+        התחילו מסלול
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M14 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+    </a>
+
+    <a href="#/notebook" class="card card--notebook" data-track="notebook">
+      <div class="card__badge">פופולרי</div>
+      <div class="card__num">03</div>
+      <h2 class="card__title">NotebookLM</h2>
+      <p class="card__sub">מצגות מהמקורות שלכם</p>
+      <p class="card__desc">
+        מזינים מקור — מקבלים מצגת נאמנה למקור. מצוין להפיכת מאמר, סילבוס,
+        או תמלול הרצאה למצגת שמבוססת רק על החומר שלכם.
+      </p>
+      <ul class="card__bullets">
+        <li>חינם לכולם</li>
+        <li>~10 דקות להתנסות</li>
+      </ul>
+      <span class="card__cta">
+        התחילו מסלול
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M14 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+    </a>
+  </div>
+
+  <aside class="footnote">
+    <h3 class="footnote__title">לפני שמתחילים — שלושה דברים</h3>
+    <ol class="footnote__list">
+      <li><strong>התחילו מהמתווה.</strong> הוא הבסיס ל-Canvas ול-NotebookLM. אבל כל מסלול עצמאי — אפשר גם לקפוץ.</li>
+      <li><strong>אין מבחן.</strong> זאת התנסות — נסו, טעו, נסו שוב.</li>
+      <li><strong>הקישור יישאר.</strong> אפשר לחזור ולעבוד גם בערב, גם מחר.</li>
+    </ol>
+  </aside>
+</section>
+
+<!-- Track sections filled by script.js -->
+<section class="route route--track route--outline"  data-route="/outline"  data-accent="outline"  hidden></section>
+<section class="route route--track route--canvas"   data-route="/canvas"   data-accent="canvas"   hidden></section>
+<section class="route route--track route--images"   data-route="/images"   data-accent="images"   hidden></section>
+<section class="route route--track route--notebook" data-route="/notebook" data-accent="notebook" hidden></section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="accessibility-statement">
+    <h3>הצהרת נגישות</h3>
+    <p>אתר זה עומד בדרישות תקנות שוויון זכויות לאנשים עם מוגבלות (התאמות נגישות לשירות), התשע"ג-2013, ותקן ישראלי ת"י 5568 המבוסס על הנחיות WCAG 2.0 ברמה AA.</p>
+    <p>אם נתקלתם בבעיית נגישות באתר, נשמח לסייע:</p>
+    <p><strong>רכז נגישות:</strong> תום הגלעדי<br><strong>אימייל:</strong> <a href="mailto:tomhagiladi@gmail.com">tomhagiladi@gmail.com</a></p>
+  </div>
+  <p class="site-footer__credit">נבנה בידי תום הגלעדי · 2026 · עבור סגל הפקולטה למקצועות הבריאות · הקריה האקדמית אונו</p>
+</footer>
+
+<!-- Toast for "copied" feedback -->
+<div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+<script src="content.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
