@@ -35,11 +35,11 @@
   // -------- כפתור העתקה (HTML משותף) --------
   function copyButton(text, label) {
     return `
-      <button type="button" class="prompt-box__copy" data-copy="${escapeHTML(text)}" aria-label="העתק טקסט">
+      <button type="button" class="prompt-box__copy" data-copy="${escapeHTML(text)}" aria-label="העתיקי טקסט">
         <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
           <path d="M16 1H4a2 2 0 00-2 2v14h2V3h12V1zm3 4H8a2 2 0 00-2 2v14a2 2 0 002 2h11a2 2 0 002-2V7a2 2 0 00-2-2zm0 16H8V7h11v14z" fill="currentColor"/>
         </svg>
-        <span>${escapeHTML(label || "העתק")}</span>
+        <span>${escapeHTML(label || "העתיקי")}</span>
       </button>`;
   }
 
@@ -76,7 +76,7 @@
             <div class="prompt-box">
               <div class="prompt-box__label">פרומפט מומלץ להעתקה</div>
               <div class="prompt-box__text">${escapeHTML(step.prompt)}</div>
-              ${copyButton(step.prompt, "העתק")}
+              ${copyButton(step.prompt, "העתיקי")}
             </div>`
           : "";
         const tipHTML = step.tip ? `<div class="tip">${step.tip}</div>` : "";
@@ -102,7 +102,7 @@
       ? `
       <div class="filters" role="group" aria-label="סינון לפי סוג השימוש">
         <span class="filters__label">סוג השימוש:</span>
-        <button class="filter-chip is-active" data-value="all" type="button">הכל</button>
+        <button class="filter-chip is-active" data-value="all" type="button">הכול</button>
         ${useCases
           .map(
             (u) =>
@@ -125,7 +125,7 @@
           <div class="idea__prompt-box">
             <div class="idea__prompt-label">${escapeHTML(idea.promptLabel || "פרומפט מוכן להעתקה")}</div>
             <div class="idea__prompt-text">${escapeHTML(idea.prompt)}</div>
-            ${copyButton(idea.prompt, "העתק")}
+            ${copyButton(idea.prompt, "העתיקי")}
           </div>
         </article>`;
       })
@@ -169,7 +169,7 @@
     });
     if (stepsHTML) {
       blocks.push({
-        title: data.stepsTitle || "צעד אחר צעד — מתחילים",
+        title: data.stepsTitle || "צעד אחר צעד — מתחילות",
         id: `steps-${routeKey}`,
         body: `<ol class="steps">${stepsHTML}</ol>`,
       });
@@ -178,7 +178,7 @@
       blocks.push({
         title: data.ideasTitle || "רעיונות ופרומפטים מוכנים",
         id: `ideas-${routeKey}`,
-        body: `${filtersHTML}<div class="ideas">${ideasHTML}<div class="no-results" hidden>אין פריטים שמתאימים לסינון. נסו לבחור הכל.</div></div>`,
+        body: `${filtersHTML}<div class="ideas">${ideasHTML}<div class="no-results" hidden>אין פריטים שמתאימים לסינון. נסי לבחור הכול.</div></div>`,
       });
     }
     if (sources.length) {
@@ -223,8 +223,8 @@
       ${blocksHTML}
 
       <div class="track-footer">
-        <h3 class="track-footer__title">${escapeHTML(data.footerTitle || "סיימתם? יופי. רוצים לחקור עוד?")}</h3>
-        <p class="track-footer__sub">${escapeHTML(data.footerSub || "חזרו לבחור מסלול אחר. כל אחד עצמאי לחלוטין.")}</p>
+        <h3 class="track-footer__title">${escapeHTML(data.footerTitle || "סיימת? יופי. רוצה לחקור עוד?")}</h3>
+        <p class="track-footer__sub">${escapeHTML(data.footerSub || "חזרי לבחור מסלול אחר. כל מסלול עצמאי לחלוטין.")}</p>
         <a href="#/" class="track-footer__cta">
           <span>חזרה לבחירת מסלול</span>
           <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
@@ -250,13 +250,13 @@
           const labelEl = btn.querySelector("span");
           const original = labelEl.textContent;
           labelEl.textContent = "הועתק!";
-          showToast("הטקסט הועתק. הדביקו ב-ChatGPT / Gemini / NotebookLM.");
+          showToast("הטקסט הועתק. הדביקי ב-ChatGPT / Gemini / NotebookLM.");
           setTimeout(() => {
             btn.classList.remove("is-copied");
             labelEl.textContent = original;
           }, 1800);
         } catch (err) {
-          showToast("לא הצלחתי להעתיק. סמנו ידנית והעתיקו.");
+          showToast("לא הצלחתי להעתיק. סמני ידנית והעתיקי.");
         }
       });
     });
